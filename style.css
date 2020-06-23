@@ -1,0 +1,92 @@
+body
+{
+    font-family: 'Lato' , sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+}
+#title
+{
+    font-size: 18px;
+    padding: 40px;
+    width: 10vw;
+}
+#navbar
+{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 10px;
+}
+li
+{
+    list-style: none;
+}
+#buttonSub 
+{
+    width: 10vw;
+    height: 30px;
+    border-style: 1px solid black;
+    border-radius: 15px;
+    background-color: white !important;
+    font-size: 10px !important;
+    font-weight: bold;
+    margin-right: 40px;
+}
+#image
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:40%;
+    height:70%;
+    border-radius: 50%;
+}
+#main
+{
+    display: flex;
+    margin-top: 200px;
+}
+#mainContent , #mainLogo
+{
+    width: 50vw;
+    
+}
+#mainContent
+{
+    width: 40vw;
+    padding-left: 100px;
+}
+
+#mainTitle
+{
+    font-size: 34px;
+    width: 520px;
+}
+#mainText
+{
+    font-size: 14px;
+    color: grey;
+    width: 530px;
+}
+#action
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#rectangle
+{
+    transform: rotate(90deg);
+    padding-left: 27px;
+    align-items: center;
+}
