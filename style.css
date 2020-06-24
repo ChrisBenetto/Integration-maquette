@@ -3,6 +3,9 @@ body
     font-family: 'Lato' , sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 #nav
 {
@@ -25,30 +28,77 @@ body
     justify-content: space-between;
     color: grey;
     font-size: 10px;
+    font-weight: bold;
 }
 li
 {
     list-style: none;
 }
+li:hover
+{
+    border-bottom:2px solid black;
+}
 #buttonSub 
 {
-    width: 10vw;
+    width: 8vw;
     height: 30px;
-    border-style: 1px solid black;
+    border-style: 1px solid black !important;
     border-radius: 15px;
     background-color: white !important;
     font-size: 10px !important;
     font-weight: bold;
     margin-right: 40px;
 }
+#buttonSub:hover
+{
+    background-color:rgb(255, 227, 226) !important;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    color: rgb(255,116,110);
+    border-color:rgb(255, 227, 226)!important;
+}
 #image
 {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width:40%;
-    height:70%;
+    bottom: -10%;
+    right: -10%;
+    width:50%;
+    height:80%;
     border-radius: 50%;
+    z-index: 3;
+}
+#contourRed
+{
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width:52%;
+    height:82%;
+    border-radius: 50%;
+    background-color: rgb(255,116,110);
+    z-index: 2;
+}
+#contourPink
+{
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width:54%;
+    height:84%;
+    border-radius: 50%;
+    background-color: rgb(255, 160,156);
+    z-index: 1;
+}
+#contourTransp
+{
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width:56%;
+    height:86%;
+    border-radius: 50%;
+    background-color: rgb(255, 227, 226);
+    opacity: 0.5;
 }
 #main
 {
@@ -89,4 +139,14 @@ li
     transform: rotate(90deg);
     padding-left: 27px;
     align-items: center;
+}
+#scrollAction
+{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+#scrollLabel
+{
+    transform: rotate(-90deg);
 }
